@@ -41,7 +41,7 @@ export default function SingleProduct() {
       </div>
       <div className="pt-[5rem]">
         {products && <p className="text-[2.5rem] font-bold ">Related Items</p>}
-        <div className='grid grid-cols-5 gap-8 pt-8'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 pt-8'>
           {
             products?.filter(pr=>pr.category === data?.category).slice(0,5).map(product=>{
               return(
