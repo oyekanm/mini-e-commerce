@@ -15,7 +15,7 @@ const Flutter = ({ onClose, price }) => {
     tx_ref: Date.now(),
     amount: price,
     currency: "NGN",
-    payment_options: "card,mobilemoney,ussd",
+    payment_options: "mobilemoney,ussd",
     customer: {
       email: `user${Date.now()}@gmail.com`,
       phone_number: "070********",

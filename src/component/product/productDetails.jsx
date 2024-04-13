@@ -87,9 +87,11 @@ export default function ProductDetails({ product }) {
         </span>
       </div>
       <div className="flex flex-col gap-4 pt-8">
-        <Button className="text-[1.6rem] uppercase h-16 ">
-          <Link to={"/cart"}>checkout ({set.length})</Link>
-        </Button>
+        <Link className="w-full" to={"/cart"}>
+          <Button className="text-[1.6rem] uppercase h-16 w-full">
+            checkout ({set.length})
+          </Button>
+        </Link>
         <Button
           onClick={() => addToCart(id)}
           className="text-[1.6rem] uppercase h-16 "
